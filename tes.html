@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Demo</title>
+    <style>
+      button {
+        font-size: 24px;
+        padding: 12px 24px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Press the Button</h1>
+    <button onclick="showLove()">Click me</button>
+    <p id="love-message"></p>
+    <script>
+      function showLove() {
+        var message = "I love you!";
+        document.getElementById("love-message").innerHTML = message;
+      }
+    </script>
+  </body>
+</html>
